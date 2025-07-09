@@ -71,13 +71,83 @@
 // console.log(editedNumbers);
 
 
-//4. Destructor.
+//4. Destructuring.
 
 // const [firstName, secondName]=["Lalo", "Martinez"];
 // console.log(firstName);
 
-const {name:userName, age}={
-    name:"Max",
-    age:21
+// //Es otra forma de llamar a las variables. 
+// const {name:userName, age}={
+//     name:"Max",
+//     age:21
+// }
+// console.log(userName);
+
+
+
+// //5. The Spread Operator. 
+// const hobbies=["Sport", "Cooking"];
+
+// const newHobbies=["Swimming"];
+
+// //Usando los puntos se combinan , si se quitan seria un arreglo de areglos, en este caso
+// // Es un arreglo combinado de Strings
+// const mergedHobiies=[...hobbies,...newHobbies];
+// console.log(mergedHobiies);
+
+// //Tambien se puede con otros datos, como los objetos
+
+// const user={
+//     name:"Max",
+//     age:21
+// }
+
+
+// const extendedUser={
+//     isAdmin: true,
+//     ... user
+// }
+
+// console.log(extendedUser);
+
+
+// //6. Control Stroctures
+
+// const password= prompt("Your Pasword");
+
+// console.log(password);
+
+// const hobbies=["Kissing", "Driving"];
+
+// for(const hobbie of hobbies){
+//     console.log(hobbie);
+
+// }
+
+// // 7. Manipuling the DOM. 
+
+
+// const list= document.querySelector("ul");
+// list.remove();
+
+// 8. Using Functions as values. 
+
+
+function funcion1(){
+    console.log("Primer Hola");
 }
-console.log(userName);
+
+const funcion2 =()=>{
+    console.log("Segundo Hola");
+
+}
+
+
+setTimeout(funcion1,0);
+
+
+setTimeout(funcion2,4000);
+
+setTimeout(()=>{
+    console.log("Tercer Hola")
+},10000);
