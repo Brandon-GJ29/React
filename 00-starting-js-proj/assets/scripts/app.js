@@ -130,24 +130,32 @@
 // const list= document.querySelector("ul");
 // list.remove();
 
-// 8. Using Functions as values. 
+// // 8. Using Functions as values. 
 
 
-function funcion1(){
-    console.log("Primer Hola");
-}
+// function funcion1(){
+//     console.log("Primer Hola");
+// }
 
-const funcion2 =()=>{
-    console.log("Segundo Hola");
+// const funcion2 =()=>{
+//     console.log("Segundo Hola");
 
-}
-
-
-setTimeout(funcion1,0);
+// }
 
 
-setTimeout(funcion2,4000);
+// setTimeout(funcion1,0);
 
-setTimeout(()=>{
-    console.log("Tercer Hola")
-},10000);
+
+// setTimeout(funcion2,4000);
+
+// setTimeout(()=>{
+//     console.log("Tercer Hola")
+// },10000);
+
+
+//9. Defining Function inside of function. 
+
+
+//10. References vs primitive values. 
+
+ 
