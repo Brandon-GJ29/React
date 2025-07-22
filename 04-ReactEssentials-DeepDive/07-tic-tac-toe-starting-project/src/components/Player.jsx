@@ -15,8 +15,8 @@ export default function Player({initialName,symbol, isActive}){
         editablePlayerName =<input type="text" required value={playerName} onChange={handleChange} />;
     }
     return(
-        <li>
-            <span className={isActive ? 'active':undefined}>
+        <li className={isActive ? 'active':undefined}>
+            <span className="player">
             {editablePlayerName}
             <span className="player-symbol">{symbol}</span>
             </span>
